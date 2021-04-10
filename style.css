@@ -1,0 +1,37 @@
+.container {
+  padding-top: 200px;
+}
+
+* {
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  box-shadow: 3px 5px 30px black;
+  border: none;
+}
+
+.card-header {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 1px 1px 3px black, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+p.card-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.btn-primary {
+  float: right;
+  box-shadow: 1px 1px 5px black;
+}
+
+.btn-danger {
+  box-shadow: 1px 1px 5px black;
+}
