@@ -42,7 +42,7 @@ function App() {
       className="main"
       style={{ backgroundColor: color, minHeight: '100vh' }}
     >
-      <div className="container pt-5">
+      <div id="quote-box" className="container pt-5">
         <div className="container">
           <div className="card">
             <div
@@ -63,8 +63,10 @@ function App() {
             >
               {randomQuote ? ( // <> and </> are fragments in React to return elements as one block
                 <>
-                  <p className="card-text">&quot;{randomQuote.text}&quot;</p>
-                  <h5 className="card-title">
+                  <p id="text" className="card-text">
+                    &quot;{randomQuote.text}&quot;
+                  </p>
+                  <h5 id="author" className="card-title">
                     - {randomQuote.author || 'Unknown'}
                   </h5>
                 </>
@@ -73,10 +75,15 @@ function App() {
               )}
               <div className="form-horizontal">
                 <div className="">
-                  <button onClick={getNewQuote} className="btn btn-danger">
+                  <button
+                    id="new-quote"
+                    onClick={getNewQuote}
+                    className="btn btn-danger"
+                  >
                     New Quote
                   </button>
                   <a
+                    id="tweet-quote"
                     href={
                       'https://twitter.com/intent/tweet?hashtags=quote&related=freecodecamp&text=' +
                       encodeURIComponent(
